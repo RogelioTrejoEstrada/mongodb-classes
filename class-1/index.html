@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Base de Datos NoSQL</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/blood.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2 style="text-align: left;">Introducción a Bases de Datos NoSQL</h2>
+				<hr>
+				<p>Rogelio Trejo Estrada</p>
+			</section>
+			<section>
+				<h2>Índice</h2>
+				<hr>
+				<ul>
+					<li>¿Que es NoSQL?</li>
+					<li>Diferencias entre SQL y NoSQL</li>
+					<li>Ventajas y desventajas de NoSQL</li>
+					<li>Tipos de Bases de Datos NoSQL</li>
+					<li>Bases de datos Documentales NoSQL</li>
+					<li>¿Que es MongoDB?</li>
+				</ul>
+			</section>
+			<section>
+				<h3>¿Que es NoSQL?</h3>
+				<hr />
+				<div style="display: flex;">
+					<p style="text-align: left;">Conocidas como bases de datos no relacionales (Not Only SQL o No SQL),
+						son un tipo de DB en la cual se modela datos de una manera especifica y con un modelo felxible,
+						para la creación de aplicaciones modernas. Este tipo de base de datos es reconocida por su facil
+						implementación y rendimeinto de escalabilidad.</p>
+					<img width="500"
+						src="https://www.diegocalvo.es/wp-content/uploads/2016/09/Bases-de-Datos-NoSQL.png" />
+				</div>
+			</section>
+			<section>
+				<section>
+					<h3>Diferencias entre SQL y NoSQL</h3>
+					<hr />
+					<table>
+						<thead>
+							<tr>
+								<th>Característica</th>
+								<th>SQL</th>
+								<th>NoSQL</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									Forma de guardar los datos
+								</td>
+								<td>
+									Tablas, Campos, Registros
+								</td>
+								<td>
+									Colecciones, Documentos, Campos
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Modelo de los datos
+								</td>
+								<td>
+									Estricta al guardar los datos
+								</td>
+								<td>
+									Flexible al guardar los datos
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Lenguaje
+								</td>
+								<td>
+									DDL, DML, DCL, TCL
+								</td>
+								<td>
+									Cuenta con su propio lenguaje
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h3>Diferencias entre SQL y NoSQL</h3>
+					<hr />
+					<table>
+						<thead>
+							<tr>
+								<th>Característica</th>
+								<th>SQL</th>
+								<th>NoSQL</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									Rendimiento
+								</td>
+								<td>
+									Depende del creador y de la cantidad de datos (en algun punto)
+								</td>
+								<td>
+									Dependera del tipo y motor que se ocupe
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Escalabilidad
+								</td>
+								<td>
+									Sera mas vertical que horizontal
+								</td>
+								<td>
+									Sera mas horizontal que vertical
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Ventajas y desventajas de NoSQL</h3>
+					<hr />
+					<div style="display: flex;">
+						<div>
+							<h4>Ventajas</h4>
+							<ul>
+								<li>No genera cuellos de botella</li>
+								<li>Variedad para diferentes necesidades</li>
+								<li>Modelaje flexible</li>
+								<li><strong>Volumenes gigantes</strong></li>
+								<li>Fácil de implementar</li>
+								<li>Fácil de escalar</li>
+								<li>Rápido en consultas</li>
+								<li>Acepta redundancia</li>
+							</ul>
+						</div>
+						<div>
+							<img style="
+								width: 300px;
+								position: relative;
+								left: 50%;
+								top: 50%;
+								transform: translate(0, -50%);
+							" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyb_tO8yk9_4yot9Hfh84MGNLiu3dHH-OHBA&usqp=CAU" />
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Ventajas y desventajas de NoSQL</h3>
+					<hr />
+					<div style="display: flex;">
+						<div>
+							<h4>Desventajas</h4>
+							<ul>
+								<li><strong>Flexibilidad!!!!</strong></li>
+								<li>Manejo para grandes volumenes de datos</li>
+								<li>No siempre es una buena opción</li>
+							</ul>
+						</div>
+						<div class="r-stack">
+							<img class="fragment" style="width: 500px;
+								position: relative;
+								left: 10%;
+								top: 50%;
+								transform: translate(0, -50%);
+							" src="https://i.pinimg.com/736x/ff/dc/d3/ffdcd3e94c886c577787234345daf590.jpg" />
+							<img class="fragment" style="
+								position: relative;
+								left: 10%;
+								top: 50%;
+								transform: translate(0, -50%);
+							" src="https://hackingprofessional.github.io/Security/img/NoSQlvsSQL.png" />
+						</div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<h3>Tipos de Bases de Datos NoSQL</h3>
+				<hr />
+				<img src="https://static.packt-cdn.com/products/9781787126992/graphics/Insert-Image_08_02.png" />
+			</section>
+			<section>
+				<h3>Bases de datos Documentales NoSQL</h3>
+				<hr />
+				<p>Son aquellas que se basan en documentos (Objetos tipo JSON)</p>
+				<pre><code data-trim data-noscape>
+{
+	_id: "507f191e810c19729de860ea",
+	name: "John",
+	age: 30,
+	friends: [
+		{
+			name: "Sally",
+			age: 26
+		},
+		{
+			name: "Mike",
+			age: 27
+		}
+	],
+	more: {
+		address: "123 Main St",
+		city: "Anytown",
+		state: "CA"
+	},
+	fruts: ["apple", "banana"]
+}
+				</code></pre>
+			</section>
+			<section>
+				<h3>¿Que es MongoDB?</h3>
+				<hr />
+				<p><i>"MongoDB es una base de datos de documentos que ofrece una gran escalabilidad y flexibilidad, y un modelo de consultas e indexación avanzado."</i> <a href="https://www.mongodb.com/es/what-is-mongodb">mas informacion....</a></p>
+				<img src="https://i.blogs.es/ce4ab0/mongodb-logo/1366_2000.jpg" />
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			width: 1300,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
