@@ -1,0 +1,122 @@
+[
+    {
+        "car": "Acura",
+        "model": "TL",
+        "year": 2006,
+        "price": "$4337.71"
+    },
+    {
+        "car": "Nissan",
+        "model": "Quest",
+        "year": 1994,
+        "price": "$4174.35"
+    },
+    {
+        "car": "Buick",
+        "model": "LeSabre",
+        "year": 1992,
+        "price": "$4539.75"
+    },
+    {
+        "car": "Mazda",
+        "model": "Mazda6",
+        "year": 2003,
+        "price": "$4680.43"
+    },
+    {
+        "car": "Isuzu",
+        "model": "Trooper",
+        "year": 1996,
+        "price": "$4445.44"
+    },
+    {
+        "car": "Mercury",
+        "model": "Sable",
+        "year": 1991,
+        "price": "$3020.64"
+    },
+    {
+        "car": "GMC",
+        "model": "Sonoma",
+        "year": 1996,
+        "price": "$3540.27"
+    },
+    {
+        "car": "Volvo",
+        "model": "S60",
+        "year": 2012,
+        "price": "$4200.75"
+    },
+    {
+        "car": "Volkswagen",
+        "model": "Golf",
+        "year": 1994,
+        "price": "$4535.31"
+    },
+    {
+        "car": "Suzuki",
+        "model": "SJ",
+        "year": 1988,
+        "price": "$4451.70"
+    },
+    {
+        "car": "Volkswagen",
+        "model": "Tiguan",
+        "year": 2012,
+        "price": "$3087.90"
+    },
+    {
+        "car": "Acura",
+        "model": "RL",
+        "year": 2011,
+        "price": "$3944.60"
+    },
+    {
+        "car": "Hummer",
+        "model": "H2",
+        "year": 2008,
+        "price": "$3165.02"
+    },
+    {
+        "car": "Ford",
+        "model": "Windstar",
+        "year": 1995,
+        "price": "$4733.35"
+    },
+    {
+        "car": "Volkswagen",
+        "model": "Fox",
+        "year": 1992,
+        "price": "$4218.64"
+    },
+    {
+        "car": "Oldsmobile",
+        "model": "Bravada",
+        "year": 2000,
+        "price": "$4415.72"
+    },
+    {
+        "car": "Dodge",
+        "model": "Dakota Club",
+        "year": 2004,
+        "price": "$4953.15"
+    },
+    {
+        "car": "Chevrolet",
+        "model": "S10",
+        "year": 2004,
+        "price": "$4795.70"
+    },
+    {
+        "car": "Ford",
+        "model": "E350",
+        "year": 2003,
+        "price": "$4441.42"
+    },
+    {
+        "car": "Acura",
+        "model": "Integra",
+        "year": 1996,
+        "price": "$4919.11"
+    }
+]
