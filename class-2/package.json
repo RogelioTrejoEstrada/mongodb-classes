@@ -13,9 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongodb": "^4.2.0",
-    "mongoose": "^6.0.13"
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",

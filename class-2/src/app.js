@@ -1,5 +1,9 @@
 import express from "express";
 
+// Importacionde nuevas dependencias para el proyecto
+import morgan from "morgan"; // Nos ayudara a ver que ruta se esta visitando
+import cors from "cors"; // Nos ayuda a que se pueda acceder a nuestra API desde cualquier lugar
+
 // Routes
 import routes from "./routes/routes";
 import usersRoute from "./routes/users.routes";
@@ -10,6 +14,10 @@ const app = express();
 // Middleares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// Se ejecuta los middlewares que se importaron
+app.use(morgan('dev'));
+app.use(cors());
 
 // Rutas de la aplicación
 app.use(routes);
