@@ -7,6 +7,8 @@ import cors from "cors"; // Nos ayuda a que se pueda acceder a nuestra API desde
 // Routes
 import routes from "./routes/routes";
 import usersRoute from "./routes/users.routes";
+import carsRoute from "./routes/cars.routes";
+import addressRouter from "./routes/address.routes";
 
 // Instancia de la aplicación de servidor
 const app = express();
@@ -22,6 +24,8 @@ app.use(cors());
 // Rutas de la aplicación
 app.use(routes);
 app.use(usersRoute);
+app.use(carsRoute);
+app.use(addressRouter);
 
 // app.get("/", function (req, res) {
 //     res.send("Hola mundo!!!");
