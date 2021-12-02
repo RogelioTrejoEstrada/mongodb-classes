@@ -96,4 +96,53 @@ addressRouter.delete("/address/:id", async (req, res) => {
     res.send(address);
 });
 
+// Ruta para obtener todas las address de un usuario
+addressRouter.get("/address/user/:id", async (req, res) => {
+    // Obtengo el id de la address
+    const id = req.params.id;
+
+    // Obtengo la coleccion de address
+    const addressCollection = (await db()).collection("address");
+
+    // Obtengo la address
+    const address = await addressCollection.aggregate([
+        {
+            $lookup: {
+                from: "users",
+                localField: "_id",
+                foreignField: "address",
+                as: "user"
+            }
+        },
+        {
+            $match: {
+                "user._id": ObjectId(id)
+            }
+        },
+        {
+            $unwind: "$user"
+        },
+        {
+            $project: {
+                _id: 1,
+                street: 1,
+                number: 1,
+                city: 1,
+                state: 1,
+                postal_code: 1,
+                user: {
+                    first_name: 1,
+                    last_name: 1,
+                    email: 1,
+                    age: 1
+                }
+        
+            }
+        }
+    ]).toArray();
+
+    // Envio la respuesta
+    res.send(address[0]);
+});
+
 export default addressRouter;

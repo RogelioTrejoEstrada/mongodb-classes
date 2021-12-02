@@ -1,0 +1,38 @@
+[
+    {
+        "first_name": "Sebastiano",
+        "last_name": "Hablet",
+        "email": "shablet0@printfriendly.com",
+        "age": 45,
+        "address": "619c3e85f49cb50fb782a1ec",
+        "cars": [
+            "619c3e9a15fe6d051644db2c",
+            "619c3e9a15fe6d051644db2f"
+        ]
+    },
+    {
+        "first_name": "Bertie",
+        "last_name": "Bartolome",
+        "email": "shablet0@printfriendly.com",
+        "age": 37,
+        "address": "619c3e85f49cb50fb782a1f9",
+        "cars": [
+            "619c3e9a15fe6d051644db2e",
+            "619c3e9a15fe6d051644db2e",
+            "619c3e9a15fe6d051644db31",
+            "619c4015a9b9ebe368e79852"
+        ]
+    },
+    {
+        "first_name": "Juan",
+        "last_name": "Vazquez",
+        "email": "jonex720@gmail.com",
+        "age": 10,
+        "address": "619c3e85f49cb50fb782a1ff",
+        "cars": [
+            "619c4015a9b9ebe368e79857",
+            "619c4015a9b9ebe368e7985c",
+            "619c3e9a15fe6d051644db31"
+        ]
+    }
+]
