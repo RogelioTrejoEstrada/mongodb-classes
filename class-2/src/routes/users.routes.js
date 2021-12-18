@@ -160,25 +160,25 @@ usersRouter.get("/users/address/:id", async (req, res) => {
                 last_name: 1,
                 email: 1,
                 age: 1,
-                address: {
-                    street: 1,
-                    city: 1,
-                    state: 1,
-                    postal_code: 1,
-                    number: 1
-                },
-                // street: "$address.street",
-                // city: "$address.city",
-                // state: "$address.state",
-                // postal_code: "$address.postal_code",
-                // number: "$address.number"
+                // address: {
+                //     street: 1,
+                //     city: 1,
+                //     state: 1,
+                //     postal_code: 1,
+                //     number: 1
+                // },
+                street: "$address.street",
+                city: "$address.city",
+                state: "$address.state",
+                postal_code: "$address.postal_code",
+                number: "$address.number"
 
             }
         }
     ]).toArray();
 
     // Mando la respuesta al cliente
-    res.json(user[0]);
+    res.json(user);
 });
 
 // Ruta para obtener la relacion de usuarios con sus carros

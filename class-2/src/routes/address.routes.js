@@ -128,7 +128,7 @@ addressRouter.get("/address/user/:id", async (req, res) => {
                 street: 1,
                 number: 1,
                 city: 1,
-                state: 1,
+                state: 1, 
                 postal_code: 1,
                 user: {
                     first_name: 1,
@@ -142,7 +142,7 @@ addressRouter.get("/address/user/:id", async (req, res) => {
     ]).toArray();
 
     // Envio la respuesta
-    res.send(address[0]);
+    res.send(address);
 });
 
 export default addressRouter;
